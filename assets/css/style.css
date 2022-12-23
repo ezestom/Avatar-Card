@@ -9,7 +9,7 @@
 
 body {
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
    height: 100vh;
    width: 100vw;
@@ -17,33 +17,31 @@ body {
    background-image: url('/assets/images/wallpaper2you_77898.jpg');
    background-repeat: repeat;
    resize: both;
-   overflow: auto;
-   gap: 5%;
    flex-wrap: wrap;
    color: white;
-
+   gap: 3%;
 }
 
 .first {
-   width: 100vw;
+   min-width: 100vw;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    line-height: 35px;
    flex-wrap: wrap;
-   padding: 0 1%;
 }
 
 .text {
    font-size: 1.25rem;
    max-width: 425px;
    text-align: center;
-   border-radius: 5px;
+   border-radius: 5px;   
 }
 
 h1 {
    font-size: 2rem;
    font-weight: bold;
    line-height: 70px;
+   
 
 }
 .trailer{
@@ -54,7 +52,16 @@ h1 {
    color: #007bb2;
    transition: .25s;
 }
-
+.video{
+   border-radius: 20px;
+   box-shadow: 11px 13px 9px -7px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 11px 13px 9px -7px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 11px 13px 9px -7px rgba(0, 0, 0, 0.75);
+}
+.web{
+   width: 425px;
+   text-align: center;
+}
 .card {
    position: relative;
    width: 320px;
@@ -180,7 +187,7 @@ h1 {
    border: 2px solid #fff;
 }
 .card .details .cast ul li:hover{
-   border: 2px solid black;
+   border: 2px solid #007bb2;
    transition: .25s;
 }
 
@@ -188,18 +195,21 @@ h1 {
    max-width: 100%;
 }
 
-@media screen and (max-width: 800px){
-   .web{
-      display: none;
-   }
-}
+
 @media screen and (max-width: 450px){
    .text h1{
       font-size: 1.5rem;
    }
-   .text p{
-      font-size: 1rem;
-   }
    
 }
-   
+@media screen and (max-width: 560px){
+.youtube{
+   width: 400px;
+   display: flex;
+}
+}
+@media screen and (max-width: 984px) {
+   .first__{
+      padding-top: 3%;
+   }   
+}
