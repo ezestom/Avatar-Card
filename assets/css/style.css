@@ -11,8 +11,48 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 100vh;
+   height: 100vh;
+   width: 100vw;
    background: linear-gradient(#007bb2, #0d1423);
+   background-image: url('/assets/images/wallpaper2you_77898.jpg');
+   background-repeat: repeat;
+   resize: both;
+   overflow: auto;
+   gap: 5%;
+   flex-wrap: wrap;
+   color: white;
+
+}
+
+.first {
+   width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   line-height: 35px;
+   flex-wrap: wrap;
+   padding: 0 1%;
+}
+
+.text {
+   font-size: 1.25rem;
+   max-width: 425px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+h1 {
+   font-size: 2rem;
+   font-weight: bold;
+   line-height: 70px;
+
+}
+.trailer{
+   color: white;
+   text-decoration: none;
+}
+.trailer:hover{
+   color: #007bb2;
+   transition: .25s;
 }
 
 .card {
@@ -21,7 +61,9 @@ body {
    height: 450px;
    border-radius: 20px;
    overflow: hidden;
-   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+   box-shadow: 11px 13px 9px -7px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 11px 13px 9px -7px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 11px 13px 9px -7px rgba(0, 0, 0, 0.75);
 }
 
 .card .poster {
@@ -137,7 +179,27 @@ body {
    border-radius: 50%;
    border: 2px solid #fff;
 }
+.card .details .cast ul li:hover{
+   border: 2px solid black;
+   transition: .25s;
+}
 
 .card .details .cast ul li img {
    max-width: 100%;
 }
+
+@media screen and (max-width: 800px){
+   .web{
+      display: none;
+   }
+}
+@media screen and (max-width: 450px){
+   .text h1{
+      font-size: 1.5rem;
+   }
+   .text p{
+      font-size: 1rem;
+   }
+   
+}
+   
