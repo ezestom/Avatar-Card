@@ -19,12 +19,25 @@
 		<title>🔹 Avatar: The Way of Water 🔹</title>
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
-	<body>
+	<body class="desactive active">
 		<header>
-			<a target="_blank" href="https://www.avatar.com/"
-				><img class="svg" src="/assets/images/avtarlogo.png" alt="web"
-			/></a>
-		</header>
+			<a target="_blank" href="https://www.avatar.com/">
+			  <img class="svg" src="/assets/images/avtarlogo.png" alt="web">
+			</a>
+			<audio id="audio" src="./assets/sound/X2Download.app - You Don't Dream in Cryo (01) - Avatar Soundtrack (128 kbps).mp3"></audio>
+			<div class="checkbox-wrapper-35">
+			  <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+			  <label for="switch">
+				 <span class="switch-x-text">This is </span>
+				 <span class="switch-x-toggletext">
+					<span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>Off</span>
+					<span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>On</span>
+				 </span>
+			  </label>
+			</div>
+		 </header>
+		 
+		
 		<section class="first">
 			<article class="ratio ratio-16x9">
 				<iframe
@@ -325,8 +338,7 @@
 			</article>
 		</section>
 
-		<footer class="footer">
 
-		</footer>
+		<script src="assets/js/sound.js"></script>
 	</body>
 </html>
